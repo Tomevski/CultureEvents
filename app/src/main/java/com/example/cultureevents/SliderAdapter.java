@@ -12,22 +12,24 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
+import com.example.cultureevents.models.CardModel;
+
 import java.util.List;
 
-public class Adapter extends PagerAdapter {
+public class SliderAdapter extends PagerAdapter {
 
-    private List<Model> models;
+    private List<CardModel> cardModels;
     private LayoutInflater layoutInflater;
     private Context context;
 
-    public Adapter(List<Model> models, Context context) {
-        this.models = models;
+    public SliderAdapter(List<CardModel> cardModels, Context context) {
+        this.cardModels = cardModels;
         this.context = context;
     }
 
     @Override
     public int getCount() {
-        return models.size();
+        return cardModels.size();
     }
 
     @Override
@@ -48,9 +50,9 @@ public class Adapter extends PagerAdapter {
         title = view.findViewById(R.id.title);
         desc = view.findViewById(R.id.desc);
 
-        imageView.setImageResource(models.get(position).getImage());
-        title.setText(models.get(position).getTitle());
-        desc.setText(models.get(position).getDesc());
+        imageView.setImageResource(cardModels.get(position).getImage());
+        title.setText(cardModels.get(position).getTitle());
+        desc.setText(cardModels.get(position).getDesc());
 
         container.addView(view,0);
         return view;

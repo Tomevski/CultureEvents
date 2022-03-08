@@ -1,14 +1,14 @@
-package com.example.cultureevents;
+package com.example.cultureevents.models;
 
 
 
-public class Model {
+public class CardModel {
 
     private int image;
     private String title;
     private String desc;
 
-    public Model(int image, String title, String desc) {
+    public CardModel(int image, String title, String desc) {
         this.image = image;
         this.title = title;
         this.desc = desc;
