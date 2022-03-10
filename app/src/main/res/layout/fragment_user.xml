@@ -1,66 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <RelativeLayout
         android:id="@+id/rellay"
-        android:layout_height="wrap_content"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="@drawable/gradient">
+
         <RelativeLayout
             android:id="@+id/imgUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
             android:layout_centerHorizontal="true"
-            android:background="@drawable/circle_border"
             android:layout_marginTop="20dp"
-            android:layout_centerInParent="true">
+            android:background="@drawable/circle_border">
 
             <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:src="@mipmap/ticket"
-                android:layout_margin="9dp"
-                android:padding="3dp"
-                android:background="@drawable/circle"
+                android:layout_width="@dimen/width_150"
+                android:layout_height="@dimen/width_150"
+                android:layout_margin="@dimen/margin_9"
                 android:adjustViewBounds="true"
-                android:scaleType="fitXY"/>
+                android:background="@drawable/circle"
+                android:padding="@dimen/padding_3"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ticket" />
 
 
         </RelativeLayout>
 
         <com.jackandphantom.circularprogressbar.CircleProgressbar
             android:id="@+id/progress_circular"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
+            android:layout_width="@dimen/layout_250"
+            android:layout_height="@dimen/layout_250"
+            android:layout_centerHorizontal="true"
+            app:cpb_foregroundProgressColor="@color/royalBlue"
+            app:cpb_foregroundProgressWidth="35"
             app:cpb_progress="0"
             app:cpb_roundedCorner="true"
-            app:cpb_foregroundProgressWidth="35"
-            app:cpb_foregroundProgressColor="@color/royalBlue"
-            app:cpb_touchEnabled="true"
-            android:layout_centerHorizontal="true"/>
+            app:cpb_touchEnabled="true" />
 
     </RelativeLayout>
 
 
-
     <RelativeLayout
-        android:layout_marginTop="250dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/layout_250"
         android:background="@color/white">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:orientation="vertical"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp">
+            android:layout_marginLeft="@dimen/margin_30"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_30"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -69,88 +69,82 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="35dp"
+                    android:layout_height="@dimen/height_35"
+                    android:text="@string/name"
                     android:textColor="@color/heading"
-                    android:textSize="24sp"
-                    android:text="John Smith">
+                    android:textSize="@dimen/textsize_24">
 
                 </TextView>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="johnsmith@gmail.com"
+                    android:layout_marginTop="@dimen/margin_15"
                     android:fontFamily="sans-serif-light"
-                    android:layout_marginTop="15dp"
-                    android:textSize="24sp"
-                    android:textColor="#000000">
+                    android:text="@string/email"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_24">
 
                 </TextView>
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="3dp"
+                    android:layout_height="@dimen/padding_3"
                     android:background="@color/grey">
 
                 </View>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:textSize="24sp"
-                    android:text="Код на билет:"/>
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:text="@string/ticket_code"
+                    android:textSize="@dimen/textsize_24" />
 
                 <EditText
                     android:id="@+id/editTextTextPersonName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_15"
                     android:ems="10"
                     android:fontFamily="sans-serif-light"
-                    android:hint="Внесете го кодот од билетот"
+                    android:hint="@string/enter_code"
                     android:inputType="textPersonName"
-                    android:textColor="#000000"
-                    android:textSize="18sp"
                     android:textAllCaps="true"
-                    android:layout_marginTop="15dp"/>
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_18" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="ИЛИ"
-                    android:layout_marginTop="15dp"
                     android:layout_gravity="center"
-                    android:gravity="center"/>
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:gravity="center"
+                    android:text="@string/or" />
+
                 <CheckBox
                     android:id="@+id/checkBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Отворен настан" />
+                    android:text="@string/open_event" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="*Полето се означува во случај кога настанот е отворен и сте на местото на настанот."/>
+                    android:text="@string/save_btn" />
+
                 <Button
                     android:id="@+id/button"
-                    android:layout_width="130dp"
+                    android:layout_width="@dimen/margin_130"
                     android:layout_height="wrap_content"
-                    android:text="Додај поени"
-                    android:background="@color/royalBlue"
-                    android:textColor="@color/white"
-                    android:textAllCaps="false"
                     android:layout_gravity="center"
-                    android:layout_marginTop="15dp"/>
-
-
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:background="@color/royalBlue"
+                    android:text="@string/add_score"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
 
             </LinearLayout>
-
-
-
-
-
         </LinearLayout>
-
-
-
-
     </RelativeLayout>
-
 </FrameLayout>

@@ -12,8 +12,8 @@
         android:orientation="vertical">
         <com.google.android.gms.common.SignInButton
             android:id="@+id/sign_in_button"
-            android:layout_width="210dp"
-            android:layout_height="40dp"
+            android:layout_width="@dimen/width_210"
+            android:layout_height="@dimen/margin_40"
             android:layout_centerHorizontal="true"
             >
         </com.google.android.gms.common.SignInButton>

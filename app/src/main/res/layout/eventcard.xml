@@ -10,9 +10,9 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/eventCard"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_margin="10dp"
-        card_view:cardCornerRadius="4dp">
+        android:layout_height="@dimen/height_120"
+        android:layout_margin="@dimen/margin_10"
+        card_view:cardCornerRadius="@dimen/card_radius">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,18 +20,18 @@
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="120dp"
+                android:layout_width="@dimen/height_120"
                 android:layout_height="match_parent"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="@dimen/margin_10"
                 card_view:cardBackgroundColor="@color/royalBlue">
 
                 <TextView
                     android:id="@+id/eventDate"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
+                    android:layout_width="@dimen/margin_70"
+                    android:layout_height="@dimen/height_70"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:textSize="35sp"
+                    android:textSize="@dimen/textsize_35"
                     android:text="28"
                     android:textColor="@color/white"
 
@@ -46,9 +46,9 @@
 
                     <TextView
                         android:id="@+id/eventName"
-                        android:layout_width="150dp"
+                        android:layout_width="@dimen/width_150"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="@dimen/margin_10"
                         android:text="TextView"
                         android:autoSizeTextType="uniform" />
 
@@ -57,15 +57,15 @@
                     android:id="@+id/eventDescription"
                     android:layout_width="160dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
+                    android:layout_marginTop="@dimen/padding_3"
                     android:text="TextView"
                     android:autoSizeTextType="uniform"/>
 
                 <TextView
                     android:id="@+id/eventTime"
-                    android:layout_width="70dp"
+                    android:layout_width="@dimen/margin_70"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
+                    android:layout_marginTop="@dimen/padding_3"
                     android:text="TextView"
                     android:autoSizeTextType="uniform" />
 
@@ -80,11 +80,11 @@
      android:layout_gravity="end">
      <ToggleButton
          android:id="@+id/attendsBtn"
-         android:layout_width="70dp"
-         android:layout_height="35dp"
+         android:layout_width="@dimen/margin_70"
+         android:layout_height="@dimen/textsize_35"
          android:layout_gravity="end"
          android:textColor="@color/white"
-         android:textSize="10sp"
+         android:textSize="@dimen/textsize_10"
          android:checked="false"
          android:background="@drawable/my_btn_toggle"
          android:textOn="✔"

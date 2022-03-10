@@ -9,15 +9,15 @@
     android:orientation="vertical">
     <TextView
         android:id="@+id/txtclose"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="@dimen/margin_30"
+        android:layout_height="@dimen/margin_30"
         android:textColor="@color/white"
         android:text="X"
         android:textStyle="bold"
         android:layout_gravity="end"
         android:gravity="center"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginRight="@dimen/margin_8"
+        android:layout_marginTop="@dimen/margin_8"
         android:background="@color/royalBlue"/>
 
     <LinearLayout
@@ -37,16 +37,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView2"
-            android:text="Се проверува вашата локација, Ве молиме почекајте"
+            android:text="@string/check_location"
             android:textStyle="bold"
-            android:textSize="20sp"
+            android:textSize="@dimen/textsize_20"
             android:textColor="@color/white"
-            android:paddingTop="20dp"
+            android:paddingTop="@dimen/margin_20"
             android:textAlignment="center"
             android:fontFamily="casual"
-            android:paddingBottom="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
+            android:paddingBottom="@dimen/margin_20"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20">
 
         </TextView>
 

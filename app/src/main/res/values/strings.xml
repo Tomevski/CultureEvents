@@ -15,4 +15,23 @@
     <string name="facebook_app_id">714354072541536</string>
     <string name="fb_login_protocol_scheme">fb714354072541536</string>
     <string name="name">John Smith</string>
+    <string name="event_name">Име на настанот</string>
+    <string name="event_desc">Опис на настанот</string>
+    <string name="choose_date">Избери датум</string>
+    <string name="choose_time">Избери време</string>
+    <string name="free_entry">Бесплатен влез</string>
+    <string name="textoff">Не</string>
+    <string name="texton">Да</string>
+    <string name="save">Зачувај</string>
+    <string name="email">johnsmith@gmail.com</string>
+    <string name="ticket_code">Код на билет</string>
+    <string name="enter_code">Внесете го кодот од билетот</string>
+    <string name="or">ИЛИ</string>
+    <string name="open_event">Отворен настан</string>
+    <string name="save_btn">*Полето се означува во случај кога настанот е отворен и сте на местото на настанот.</string>
+    <string name="add_score">Додај поени</string>
+    <string name="default_event_name">Охридско Лето 2021</string>
+    <string name="desc">Description</string>
+    <string name="check_location">Се проверува вашата локација, Ве молиме почекајте</string>
+    <string name="signup_text">Најавете се и бидете во тек со сите културни настани кои се случуваат </string>
 </resources>

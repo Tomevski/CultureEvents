@@ -42,7 +42,7 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/my_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="@dimen/height_50"
             app:layout_collapseMode="pin"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
@@ -51,7 +51,7 @@
 
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="@dimen/height_400"
             app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
 
@@ -73,11 +73,11 @@
                     android:layout_height="wrap_content"
 
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="10dp">
+                    android:layout_marginTop="@dimen/margin_10">
 
                     <Button
                         android:id="@+id/agendaBtn"
-                        android:layout_width="120dp"
+                        android:layout_width="@dimen/height_120"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10dp"
                         android:background="@color/royalBlue"
@@ -86,7 +86,7 @@
 
                     <Button
                         android:id="@+id/myAgendaBtn"
-                        android:layout_width="120dp"
+                        android:layout_width="@dimen/height_120"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:background="@color/royalBlue"
@@ -99,8 +99,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_below="@+id/btnLayout"
-                    android:layout_margin="10dp"
-                    android:padding="5dp" />
+                    android:layout_margin="@dimen/margin_10"
+                    android:padding="@dimen/padding_5" />
 
             </RelativeLayout>
 

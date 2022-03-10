@@ -25,11 +25,11 @@
                 android:layout_centerInParent="true">
 
                 <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="@dimen/width_150"
+                    android:layout_height="@dimen/width_150"
                     android:src="@mipmap/ticket"
-                    android:layout_margin="9dp"
-                    android:padding="3dp"
+                    android:layout_margin="@dimen/margin_9"
+                    android:padding="@dimen/padding_3"
                     android:background="@drawable/circle"
                     android:adjustViewBounds="true"
                     android:scaleType="fitXY"/>
@@ -39,8 +39,8 @@
 
             <com.jackandphantom.circularprogressbar.CircleProgressbar
                 android:id="@+id/progress_circular"
-                android:layout_width="250dp"
-                android:layout_height="250dp"
+                android:layout_width="@dimen/layout_250"
+                android:layout_height="@dimen/layout_250"
                 app:cpb_progress="0"
                 app:cpb_roundedCorner="true"
                 app:cpb_foregroundProgressWidth="35"
@@ -50,17 +50,17 @@
 
         </RelativeLayout>
         <RelativeLayout
-            android:layout_marginTop="250dp"
+            android:layout_marginTop="@dimen/layout_250"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="@dimen/margin_20"
                 android:orientation="vertical"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp">
+                android:layout_marginLeft="@dimen/margin_30"
+                android:layout_marginRight="@dimen/margin_30">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -69,35 +69,35 @@
 
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="35dp"
+                        android:layout_height="@dimen/radius"
                         android:textColor="@color/heading"
-                        android:textSize="24sp"
+                        android:textSize="@dimen/textsize_24"
                         android:text="@string/name">
 
                     </TextView>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="johnsmith@gmail.com"
+                        android:text="@string/email"
                         android:fontFamily="sans-serif-light"
-                        android:layout_marginTop="15dp"
-                        android:textSize="24sp"
+                        android:layout_marginTop="@dimen/margin_15"
+                        android:textSize="@dimen/textsize_24"
                         android:textColor="#000000">
 
                     </TextView>
 
                     <View
                         android:layout_width="match_parent"
-                        android:layout_height="3dp"
+                        android:layout_height="@dimen/padding_3"
                         android:background="@color/grey">
 
                     </View>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="15dp"
-                        android:textSize="24sp"
-                        android:text="Код на билет:"/>
+                        android:layout_marginTop="@dimen/margin_15"
+                        android:textSize="@dimen/textsize_24"
+                        android:text="@string/ticket_code"/>
 
                     <EditText
                         android:id="@+id/editTextTextPersonName"
@@ -105,38 +105,38 @@
                         android:layout_height="wrap_content"
                         android:ems="10"
                         android:fontFamily="sans-serif-light"
-                        android:hint="Внесете го кодот од билетот"
+                        android:hint="@string/enter_code"
                         android:inputType="textPersonName"
                         android:textColor="#000000"
-                        android:textSize="18sp"
+                        android:textSize="@dimen/textsize_18"
                         android:textAllCaps="true"
-                        android:layout_marginTop="15dp"/>
+                        android:layout_marginTop="@dimen/margin_15"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="ИЛИ"
-                        android:layout_marginTop="15dp"
+                        android:text="@string/or"
+                        android:layout_marginTop="@dimen/margin_15"
                         android:layout_gravity="center"
                         android:gravity="center"/>
                     <CheckBox
                         android:id="@+id/checkBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Отворен настан" />
+                        android:text="@string/open_event" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="*Полето се означува во случај кога настанот е отворен и сте на местото на настанот."/>
+                        android:text="@string/save_btn"/>
                     <Button
                         android:id="@+id/button"
                         android:layout_width="130dp"
                         android:layout_height="wrap_content"
-                        android:text="Додај поени"
+                        android:text="@string/add_score"
                         android:background="@color/royalBlue"
                         android:textColor="@color/white"
                         android:textAllCaps="false"
                         android:layout_gravity="center"
-                        android:layout_marginTop="15dp"/>
+                        android:layout_marginTop="@dimen/margin_15"/>
 
                 </LinearLayout>
             </LinearLayout>
@@ -146,7 +146,7 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="@dimen/layout_height"
         android:layout_alignParentBottom="true"
         android:background="@color/royalBlue"
         app:menu="@menu/bottom_navigation_menu">
