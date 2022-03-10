@@ -25,9 +25,9 @@
 <!--            android:name="com.google.android.wearable.standalone"-->
 <!--            android:value="true" />-->
 
-        <activity android:name=".ProfileActivity"/>
-        <activity android:name=".NewEvent" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.profile.ProfileActivity"/>
+        <activity android:name=".ui.news.NewEventActivity" />
+        <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

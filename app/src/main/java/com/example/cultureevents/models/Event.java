@@ -1,18 +1,14 @@
 package com.example.cultureevents.models;
 
 public class Event {
-    String name;
-    String description;
-    String location;
-    String date;
-    String time;
-    String image;
-    String creationDate;
-    Boolean neededTicket;
-
-    public Event() {
-    }
-
+    private String name;
+    private String description;
+    private String location;
+    private String date;
+    private String time;
+    private String image;
+    private String creationDate;
+    private Boolean neededTicket;
 
     public Event(String name, String description, String location, String date, String time, String creationDate, String image, Boolean neededTicket) {
         this.name = name;
@@ -25,35 +21,7 @@ public class Event {
         this.neededTicket = neededTicket;
     }
 
-    public String getImage() {
-        return image;
-    }
-
-    public String getTime() {
-        return time;
-    }
-
     public String getName() {
         return name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public String getLocation() {
-        return location;
-    }
-
-    public String getDate() {
-        return date;
-    }
-
-    public String getCreationDate() {
-        return creationDate;
-    }
-
-    public Boolean getNeededTicket() {
-        return neededTicket;
     }
 }

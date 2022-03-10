@@ -1,21 +1,20 @@
-package com.example.cultureevents;
+package com.example.cultureevents.ui.profile;
 
 import android.os.Bundle;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ProfileActivity extends AppCompatActivity {
+import com.example.cultureevents.R;
 
-    private TextView mTextView;
+/**
+ * Activity used for displaying personal info.
+ */
+public class ProfileActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-
-        mTextView = (TextView) findViewById(R.id.text);
-
-
     }
 }

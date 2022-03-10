@@ -7,8 +7,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        tools:context=".ProfileFragment">
+        xmlns:app="http://schemas.android.com/apk/res-auto">
 
         <!-- TODO: Update blank fragment layout -->
         <RelativeLayout
@@ -22,7 +21,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:background="@drawable/circle_border"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="@dimen/margin_20"
                 android:layout_centerInParent="true">
 
                 <ImageView
@@ -50,9 +49,6 @@
                 android:layout_centerHorizontal="true"/>
 
         </RelativeLayout>
-
-
-
         <RelativeLayout
             android:layout_marginTop="250dp"
             android:layout_width="match_parent"
@@ -76,7 +72,7 @@
                         android:layout_height="35dp"
                         android:textColor="@color/heading"
                         android:textSize="24sp"
-                        android:text="John Smith">
+                        android:text="@string/name">
 
                     </TextView>
                     <TextView
@@ -142,21 +138,9 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="15dp"/>
 
-
-
                 </LinearLayout>
-
-
-
-
-
             </LinearLayout>
-
-
-
-
         </RelativeLayout>
-
     </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

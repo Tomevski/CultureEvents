@@ -14,4 +14,5 @@
     <string name="hello_world">Hello Square World!</string>
     <string name="facebook_app_id">714354072541536</string>
     <string name="fb_login_protocol_scheme">fb714354072541536</string>
+    <string name="name">John Smith</string>
 </resources>
